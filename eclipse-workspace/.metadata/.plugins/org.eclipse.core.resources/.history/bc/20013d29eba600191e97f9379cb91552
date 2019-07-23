@@ -1,0 +1,9 @@
+package InheritanceBasics;
+
+public class CustomerInfoData {
+	public String custName;
+
+	public CustomerInfoData() {
+		
+	}
+}

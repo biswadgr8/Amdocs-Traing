@@ -1,0 +1,10 @@
+127.0.0.1 - - [22/Jul/2019:15:06:32 +0530] "GET / HTTP/1.1" 404 1036
+127.0.0.1 - - [22/Jul/2019:15:31:41 +0530] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [22/Jul/2019:15:31:42 +0530] "GET /HelloSOAP/WEB-INF/classes/Hello.feature HTTP/1.1" 404 1013
+127.0.0.1 - - [22/Jul/2019:16:27:09 +0530] "GET / HTTP/1.1" 404 1036
+127.0.0.1 - - [22/Jul/2019:16:27:09 +0530] "POST /HelloSOAP/services/AdminService HTTP/1.0" 200 291
+127.0.0.1 - - [22/Jul/2019:16:27:09 +0530] "POST /HelloSOAP/services/AdminService HTTP/1.0" 200 4039
+0:0:0:0:0:0:0:1 - - [22/Jul/2019:17:02:20 +0530] "GET /HelloSOAP/services/Hello?wsdl HTTP/1.1" 200 2233
+127.0.0.1 - - [22/Jul/2019:17:32:50 +0530] "GET /HelloSOAP/services/Hello?wsdl HTTP/1.1" 200 2233
+127.0.0.1 - - [22/Jul/2019:17:44:31 +0530] "GET /HelloSOAP/services/Hello?wsdl HTTP/1.1" 200 2233
+127.0.0.1 - - [22/Jul/2019:17:44:31 +0530] "POST /HelloSOAP/services/Hello HTTP/1.1" 200 391

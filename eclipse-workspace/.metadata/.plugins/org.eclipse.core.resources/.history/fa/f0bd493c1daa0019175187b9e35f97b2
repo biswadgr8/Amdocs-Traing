@@ -1,0 +1,20 @@
+package com.amdocs;
+
+public class Mobile {
+
+	private Camera camera =new Camera();
+	
+	public boolean startCameraApp()
+	{
+		System.out.println("Mobile startCameraApp method");
+		
+		if(camera.on())
+		{
+			System.out.println("Mobile startCameraApp positive code path");
+			return true;
+		}
+		System.out.println("Mobile startCameraApp negative code path");
+		
+		return false;
+	}
+}

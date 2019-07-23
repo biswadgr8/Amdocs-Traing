@@ -1,0 +1,11 @@
+package com.amdocs;
+
+public class RPNCalculator {
+
+	public double add(String string) {
+		return 25.0;
+	}
+
+	
+
+}

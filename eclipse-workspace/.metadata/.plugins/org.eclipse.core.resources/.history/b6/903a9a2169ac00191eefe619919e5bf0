@@ -1,0 +1,22 @@
+package com.amdocs;
+
+public class Steps {
+
+	@Given("the hello soap api is up and running")
+	public void createHelloSOAPObject()
+	{
+		
+	}
+	
+	@When("I invoke the soap api at url {string}")
+	public void invokeHelloSOAPAPI()
+	{
+		
+	}
+	
+	@Then("I expect the response {string}")
+	public void testResponse()
+	{
+		
+	}
+}

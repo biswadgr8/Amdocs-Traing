@@ -1,0 +1,5 @@
+package com.amdocs.amdocshellorestapi;
+
+public class helloRestController {
+
+}

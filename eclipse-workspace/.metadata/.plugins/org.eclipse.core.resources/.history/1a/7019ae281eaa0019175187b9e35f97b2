@@ -1,0 +1,16 @@
+package com.amdocs;
+
+import org.mockito.Mockito;
+
+public class MobileTest {
+
+	@Test
+	public void testStartCameraAppWhenCameraFunctionsNormally()
+	{
+		//Mocking
+		Camera mockedCamera = Mockito.mock(Camera.class);
+		
+		//Stubbing - hard coding the response of dependent method
+		Mockito.when(mockedCamera.on()).thenReturn(true);
+	}
+}

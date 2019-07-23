@@ -1,0 +1,7 @@
+Feature: Need to develop a HelloWorld Java Application.
+
+	Scenario: The application should be able to greet the user.
+	
+		Given there is a hello object
+		When I invoke the sayHello method
+		Then I expect "Hellllllo World" as the response

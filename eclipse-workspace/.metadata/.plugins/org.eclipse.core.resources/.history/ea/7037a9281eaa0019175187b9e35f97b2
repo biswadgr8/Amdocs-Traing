@@ -1,0 +1,11 @@
+package com.amdocs;
+
+public class Mobiletest {
+
+	@Test
+	public void testStartCameraAppWhenCameraFunctionsNormally()
+	{
+		//Mocking
+		Camera mockedCamera =Mockito.mock
+	}
+}

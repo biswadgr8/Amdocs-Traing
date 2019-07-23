@@ -1,0 +1,14 @@
+package com.amdocs;
+
+import org.junit.Test;
+
+public class RPNCalculatorTest {
+
+	@Test
+	public void testSimpleAddition()
+	{
+		RPNCalculator rpnCalculator = new RPNCalculator();
+		
+		double actualResult = rpnCalculator.
+	}
+}

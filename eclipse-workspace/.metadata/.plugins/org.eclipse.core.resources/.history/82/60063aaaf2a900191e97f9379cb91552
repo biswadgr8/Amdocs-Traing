@@ -1,0 +1,37 @@
+package com.amdocs;
+
+import java.util.Stack;
+
+public class RPNCalculator {
+	
+	private Stack<Double> numberStack;
+	private double firstNumber,secondNumber,result;
+	
+	public RPNCalculator()
+	{
+		numberStack =new Stack<Double>();
+		firstNumber = secondNumber = result = 0.0;
+	}
+	
+	public double add(String rpnMathExpression) {
+		
+		String[] rpnTokens =rpnMathExpression.split("");
+		
+		for(String token :rpnTokens)
+		{
+			if(token.equals("+"))
+			{
+				firstNumber =numberStack.pop();
+				secondNumber =numberStack.pop();
+				result = firstNumber + secondNumber;
+				numberStack.push(result);
+			}
+			else
+				numberStack.push(Double.valueOf(token));
+		}
+		return numberStack.pop();
+	}
+
+	
+
+}

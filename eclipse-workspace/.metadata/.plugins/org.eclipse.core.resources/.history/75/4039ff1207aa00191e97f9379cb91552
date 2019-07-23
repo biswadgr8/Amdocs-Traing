@@ -1,0 +1,20 @@
+package com.amdocs;
+
+public class Mathfactory {
+
+	public static IMathOperation getObject(String token) {
+		
+		IMathOperation mathOperation = null;
+		
+		if(mathOperation.equals("+"))
+		mathOperation = new Addition();
+		else if(mathOperation.equals("-"))
+		mathOperation = new Subtraction();
+		else if(mathOperation.equals("*"))
+		mathOperation = new Multiplication();
+		else if(mathOperation.equals("/"))
+		mathOperation = new Divison();
+		return null;
+	}
+
+}

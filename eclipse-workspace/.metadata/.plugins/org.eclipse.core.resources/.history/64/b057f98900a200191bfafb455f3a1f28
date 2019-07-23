@@ -1,0 +1,69 @@
+package MyPackage;
+import java.io.*;
+import java.util.*;
+public class IncrementSalary {
+
+		public static void main(String args[])
+		{
+			try {
+				BufferedReader in = new BufferedReader(new FileReader("InputFile"));
+				String str;
+				String grade,salary,yos,empid,newempid;
+				int y,sal1;
+				double per,inc,sal;
+				while ((str =in.readLine())!=null)
+				{
+					empid =str.substring(0,10);
+					grade = str.substring(10,12);
+					salary = str.substring(12,18);
+					sal=Double.parseDouble(salary);
+					yos =str.substring(18,20);
+					y=Integer.parseInt(yos);
+					
+					if(grade=="G1")
+					{
+						if(y>=15)
+							per=6;
+						else if(y>9 && y<15)
+							per=5.5;
+						else per=5;
+						inc = (per*sal)/100;
+						sal+=inc;
+					}
+					
+					else if(grade=="G2")
+					{
+						if(y>15)
+							per=8;
+						else if(y>9 && y<15)
+							per=7.5;
+						else per=7;
+						inc = (per*sal)/100;
+						sal+=inc;
+					}
+					else
+					{
+						if(y>15)
+							per=4;
+						else if(y>9 && y<15)
+							per=3.5;
+						else per=3;
+						inc = (per*sal)/100;
+						sal+=inc;
+					}
+					//sal1 = (int) Math.round(sal);
+					salary=Double.toString(sal);
+					newempid=empid+salary;
+					
+					System.out.println(newempid);
+					BufferedWriter out = new BufferedWriter(new FileWriter("OutputFile"));
+					out.write(newempid);
+					out.close();
+				}
+				in.close();
+			}catch(IOException e)
+			{
+				
+			}
+		}
+}
